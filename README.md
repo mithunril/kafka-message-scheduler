@@ -1,4 +1,4 @@
-![Go](https://github.com/etf1/kafka-message-scheduler/workflows/Go/badge.svg) [![Go Reference](https://pkg.go.dev/badge/github.com/etf1/kafka-message-scheduler.svg)](https://pkg.go.dev/github.com/etf1/kafka-message-scheduler) [![Go Report Card](https://goreportcard.com/badge/github.com/etf1/kafka-message-scheduler)](https://goreportcard.com/report/github.com/etf1/kafka-message-scheduler)
+![Go](https://github.com/mithunril/kafka-message-scheduler/workflows/Go/badge.svg) [![Go Reference](https://pkg.go.dev/badge/github.com/mithunril/kafka-message-scheduler.svg)](https://pkg.go.dev/github.com/mithunril/kafka-message-scheduler) [![Go Report Card](https://goreportcard.com/badge/github.com/mithunril/kafka-message-scheduler)](https://goreportcard.com/report/github.com/mithunril/kafka-message-scheduler)
 
 
 # Kafka message scheduler
@@ -166,7 +166,7 @@ docker run -e BOOTSTRAP_SERVERS="kafka:9092" etf1/kafka-message-scheduler
 
 ```go
 import(
-    runner "github.com/etf1/kafka-message-scheduler/runner/kafka"
+    runner "github.com/mithunril/kafka-message-scheduler/runner/kafka"
 )
 
 ...
@@ -312,5 +312,5 @@ spec:
 
 # Admin GUI
 
-![scheduler-admin](https://github.com/etf1/kafka-message-scheduler-admin/blob/main/docs/screenshots/two.png?raw=true)
-An admin GUI is available on another git repository for viewing schedulers info and schedules. For more information: https://github.com/etf1/kafka-message-scheduler-admin
+![scheduler-admin](https://github.com/mithunril/kafka-message-scheduler-admin/blob/main/docs/screenshots/two.png?raw=true)
+An admin GUI is available on another git repository for viewing schedulers info and schedules. For more information: https://github.com/mithunril/kafka-message-scheduler-admin

@@ -10,8 +10,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/etf1/kafka-message-scheduler/schedule"
-	"github.com/etf1/kafka-message-scheduler/store"
+	"github.com/mithunril/kafka-message-scheduler/schedule"
+	"github.com/mithunril/kafka-message-scheduler/store"
 )
 
 type missedEvents struct {

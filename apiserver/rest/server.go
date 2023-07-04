@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/etf1/kafka-message-scheduler/scheduler"
 	"github.com/gorilla/mux"
+	"github.com/mithunril/kafka-message-scheduler/scheduler"
 	log "github.com/sirupsen/logrus"
 )
 

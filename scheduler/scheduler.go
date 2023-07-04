@@ -6,10 +6,10 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/etf1/kafka-message-scheduler/instrument"
-	"github.com/etf1/kafka-message-scheduler/internal/timers"
-	"github.com/etf1/kafka-message-scheduler/schedule"
-	"github.com/etf1/kafka-message-scheduler/store"
+	"github.com/mithunril/kafka-message-scheduler/instrument"
+	"github.com/mithunril/kafka-message-scheduler/internal/timers"
+	"github.com/mithunril/kafka-message-scheduler/schedule"
+	"github.com/mithunril/kafka-message-scheduler/store"
 )
 
 const (

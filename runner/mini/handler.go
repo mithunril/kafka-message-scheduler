@@ -5,9 +5,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/etf1/kafka-message-scheduler/internal/store/hmap"
-	"github.com/etf1/kafka-message-scheduler/schedule"
-	"github.com/etf1/kafka-message-scheduler/scheduler"
+	"github.com/mithunril/kafka-message-scheduler/internal/store/hmap"
+	"github.com/mithunril/kafka-message-scheduler/schedule"
+	"github.com/mithunril/kafka-message-scheduler/scheduler"
 )
 
 type Sysout struct {

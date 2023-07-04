@@ -11,7 +11,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/etf1/kafka-message-scheduler/config"
+	"github.com/mithunril/kafka-message-scheduler/config"
 )
 
 type schedule struct {

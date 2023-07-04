@@ -7,9 +7,9 @@ import (
 	log "github.com/sirupsen/logrus"
 
 	"github.com/confluentinc/confluent-kafka-go/kafka"
-	"github.com/etf1/kafka-message-scheduler/schedule"
-	kafka_schedule "github.com/etf1/kafka-message-scheduler/schedule/kafka"
-	"github.com/etf1/kafka-message-scheduler/store"
+	"github.com/mithunril/kafka-message-scheduler/schedule"
+	kafka_schedule "github.com/mithunril/kafka-message-scheduler/schedule/kafka"
+	"github.com/mithunril/kafka-message-scheduler/store"
 )
 
 const (

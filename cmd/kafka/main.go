@@ -7,7 +7,7 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	runner "github.com/etf1/kafka-message-scheduler/runner/kafka"
+	runner "github.com/mithunril/kafka-message-scheduler/runner/kafka"
 )
 
 var (

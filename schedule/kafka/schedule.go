@@ -7,7 +7,7 @@ import (
 	"time"
 
 	confluent "github.com/confluentinc/confluent-kafka-go/kafka"
-	"github.com/etf1/kafka-message-scheduler/schedule"
+	"github.com/mithunril/kafka-message-scheduler/schedule"
 )
 
 const (

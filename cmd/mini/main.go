@@ -5,7 +5,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/etf1/kafka-message-scheduler/runner/mini"
+	"github.com/mithunril/kafka-message-scheduler/runner/mini"
 	log "github.com/sirupsen/logrus"
 )
 

@@ -5,10 +5,10 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/etf1/kafka-message-scheduler/apiserver/rest"
-	hmapcoll "github.com/etf1/kafka-message-scheduler/internal/collector/hmap"
-	"github.com/etf1/kafka-message-scheduler/internal/store/hmap"
-	"github.com/etf1/kafka-message-scheduler/scheduler"
+	"github.com/mithunril/kafka-message-scheduler/apiserver/rest"
+	hmapcoll "github.com/mithunril/kafka-message-scheduler/internal/collector/hmap"
+	"github.com/mithunril/kafka-message-scheduler/internal/store/hmap"
+	"github.com/mithunril/kafka-message-scheduler/scheduler"
 )
 
 func newServer() (srv rest.Server, closeFunc func()) {

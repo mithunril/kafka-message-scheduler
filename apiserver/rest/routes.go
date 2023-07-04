@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/etf1/kafka-message-scheduler/config"
-	"github.com/etf1/kafka-message-scheduler/schedule"
 	"github.com/gorilla/mux"
+	"github.com/mithunril/kafka-message-scheduler/config"
+	"github.com/mithunril/kafka-message-scheduler/schedule"
 	log "github.com/sirupsen/logrus"
 )
 

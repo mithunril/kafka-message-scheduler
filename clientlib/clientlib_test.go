@@ -8,7 +8,7 @@ import (
 	"time"
 
 	"github.com/confluentinc/confluent-kafka-go/kafka"
-	"github.com/etf1/kafka-message-scheduler/clientlib/retry"
+	"github.com/mithunril/kafka-message-scheduler/clientlib/retry"
 )
 
 const (

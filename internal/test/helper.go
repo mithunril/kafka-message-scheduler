@@ -14,9 +14,9 @@ import (
 	"time"
 
 	confluent "github.com/confluentinc/confluent-kafka-go/kafka"
-	"github.com/etf1/kafka-message-scheduler/internal/helper"
-	"github.com/etf1/kafka-message-scheduler/schedule/kafka"
-	kafka_store "github.com/etf1/kafka-message-scheduler/store/kafka"
+	"github.com/mithunril/kafka-message-scheduler/internal/helper"
+	"github.com/mithunril/kafka-message-scheduler/schedule/kafka"
+	kafka_store "github.com/mithunril/kafka-message-scheduler/store/kafka"
 )
 
 const (

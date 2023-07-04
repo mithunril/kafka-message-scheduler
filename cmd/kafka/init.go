@@ -7,8 +7,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/etf1/kafka-message-scheduler/config"
 	graylog "github.com/gemnasium/logrus-graylog-hook"
+	"github.com/mithunril/kafka-message-scheduler/config"
 	log "github.com/sirupsen/logrus"
 )
 

@@ -1,4 +1,4 @@
-module github.com/etf1/kafka-message-scheduler
+module github.com/mithunril/kafka-message-scheduler
 
 go 1.15
 

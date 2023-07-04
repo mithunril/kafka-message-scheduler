@@ -9,10 +9,10 @@ import (
 	"time"
 
 	confluent "github.com/confluentinc/confluent-kafka-go/kafka"
-	hmapcoll "github.com/etf1/kafka-message-scheduler/internal/collector/hmap"
-	"github.com/etf1/kafka-message-scheduler/internal/helper"
-	"github.com/etf1/kafka-message-scheduler/internal/test"
-	"github.com/etf1/kafka-message-scheduler/runner/kafka"
+	hmapcoll "github.com/mithunril/kafka-message-scheduler/internal/collector/hmap"
+	"github.com/mithunril/kafka-message-scheduler/internal/helper"
+	"github.com/mithunril/kafka-message-scheduler/internal/test"
+	"github.com/mithunril/kafka-message-scheduler/runner/kafka"
 )
 
 var (
@@ -258,7 +258,7 @@ func TestDefaultKafkaRunner_yaml_configuration(t *testing.T) {
 	checkMessagesInTopic(t, schedulesTopic, expectedSchedules)
 }
 
-// Issue #30: https://github.com/etf1/kafka-message-scheduler/issues/30
+// Issue #30: https://github.com/mithunril/kafka-message-scheduler/issues/30
 // make sure invalid schedules are deleted from the topic
 func TestDefaultKafkaRunner_issue30(t *testing.T) {
 	topics := createTopics(t, 3, []int{2, 1, 1}, "scheduler")
@@ -311,7 +311,7 @@ func TestDefaultKafkaRunner_issue30(t *testing.T) {
 	checkMessagesInTopic(t, schedulesTopic, expectedSchedules)
 }
 
-// Issue #31: https://github.com/etf1/kafka-message-scheduler/issues/31
+// Issue #31: https://github.com/mithunril/kafka-message-scheduler/issues/31
 // allow grace interval for outdated schedules, for example now - 2s should be processed as valid schedule
 // the grace interval should be configurable via a env. variable
 func TestDefaultKafkaRunner_issue31(t *testing.T) {

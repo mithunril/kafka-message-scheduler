@@ -64,7 +64,7 @@ func NewCollector(addr string) Collector {
 		// ),
 	}
 
-	prometheus.MustRegister(c.eventCounter)
+	// prometheus.MustRegister(c.eventCounter)
 
 	return c
 }

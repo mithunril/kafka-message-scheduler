@@ -9,6 +9,7 @@ import (
 
 	"github.com/mithunril/kafka-message-scheduler/instrument"
 	"github.com/prometheus/client_golang/prometheus"
+	"github.com/prometheus/client_golang/prometheus/promauto"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 )
 
@@ -42,9 +43,10 @@ func NewCollector(addr string) Collector {
 		}
 	}()
 
+	reg := prometheus.NewRegistry()
 	c := Collector{
 		srv: srv,
-		eventCounter: prometheus.NewCounterVec(
+		eventCounter: promauto.With(reg).NewCounterVec(
 			prometheus.CounterOpts{
 				Namespace: "kafka_scheduler",
 				Name:      "event_total",
@@ -52,6 +54,14 @@ func NewCollector(addr string) Collector {
 			},
 			[]string{"type"},
 		),
+		// eventCounter: prometheus.NewCounterVec(
+		// 	prometheus.CounterOpts{
+		// 		Namespace: "kafka_scheduler",
+		// 		Name:      "event_total",
+		// 		Help:      "The number of event triggered by type",
+		// 	},
+		// 	[]string{"type"},
+		// ),
 	}
 
 	prometheus.MustRegister(c.eventCounter)
